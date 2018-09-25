@@ -1,0 +1,13 @@
+@model AspCorePrimer.NW.Categories
+
+@{
+    ViewData["Title"] = "Northwind Category Details";
+}
+<h2>@ViewData["Title"]</h2>
+
+<p>This Card will display Details of Categoy Selected in the previous card.</p>
+
+<h1>Category Details of: @Model.CategoryName</h1>
+<h3>Category Id: @Model.CategoryId</h3>
+<h3>Category Name: @Model.CategoryName</h3>
+<h3>Category Description: @Model.Description</h3>

@@ -1,0 +1,15 @@
+@model IEnumerable<AspCorePrimer.NW.Categories>
+
+@{
+    ViewData["Title"] = "Nortwind Categories";
+}
+<h2>@ViewData["Title"]</h2>
+
+<p>This Card will display a list of Categories from NW Db.</p>
+
+<ul>
+    @foreach(var i in Model)
+    {
+        <li>@Html.ActionLink(i.CategoryName,"Details", null, new { id=i.CategoryId })</li>
+    }
+</ul>

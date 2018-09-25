@@ -1,0 +1,11 @@
+@model System.Diagnostics.Process
+
+@{
+    ViewData["Title"] = "Details of O/S Processes";
+}
+<h2>@ViewData["Title"]</h2>
+
+<p>Below are the details of Selected Process</p>
+
+<h3>Process Id: @Model.Id</h3>
+<h3>Name: @Model.ProcessName</h3>
